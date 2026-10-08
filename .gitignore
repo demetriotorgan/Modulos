@@ -1,0 +1,24 @@
+# secrets
+.env
+.env.local
+.env.*.local
+
+# dependencias
+node_modules/
+package-lock.json
+yarn.lock
+
+# bancos e volumes docker - NUNCA
+**/neo4j/data/
+**/neo4j/logs/
+**/neo4j/conf/
+**/neo4j/plugins/
+**/chroma_db/
+**/postgres_data/
+dist/
+build/
+.next/
+__pycache__/
+.venv/
+venv/
+.DS_Store

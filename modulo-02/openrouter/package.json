@@ -1,0 +1,20 @@
+{
+  "name": "openrouter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --env-file .env --inspect --watch src/index.ts",
+    "test:dev": "node --env-file .env --inspect --watch --test ./tests/**/*.test.ts",
+    "test": "node --env-file .env --test /test ./tests/**/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "@openrouter/sdk": "^1.2.80",
+    "@types/node": "^24.13.3",
+    "fastify": "^5.7.4"
+  }
+}

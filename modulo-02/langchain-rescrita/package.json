@@ -1,0 +1,23 @@
+{
+  "name": "langchain-rescrita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+		"dev": "node --env-file .env --inspect --watch src/index.ts",
+		"test:dev": "node --env-file .env --inspect --watch --test ./tests/**/*.test.ts",
+		"test": "node --env-file .env --test /test ./tests/**/*.test.ts",
+    "langgraph:serve": "npx @langchain/langgraph-cli@latest dev"
+	},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@langchain/core": "^1.2.11",
+    "@langchain/langgraph": "^1.4.15",
+    "@types/node": "^24.13.5",
+    "fastify": "^5.12.5",
+    "langchain": "^1.5.11"
+  }
+}
